@@ -1,0 +1,4 @@
+<form [formGroup]="habitForm" (ngSubmit)="onSubmit(habitForm.value)">
+    <input type="text" placeholder="add habit" formControlName="title">
+    <button type="submit">Add Habit</button>
+  </form>

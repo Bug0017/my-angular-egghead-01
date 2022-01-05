@@ -1,0 +1,5 @@
+<ul>
+  <h2>Habits</h2>
+  <app-habit-list-item-form (addHabit)="onAddHabit($event)"></app-habit-list-item-form>
+  <app-habit-list-item  *ngFor="let habit of habits | async" [habit]="habit"></app-habit-list-item>
+</ul>
